@@ -1,0 +1,13 @@
+name: basic-hello-world
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  hello:
+    runs-on: self-ubuntu-2404
+    steps:
+      - name: print hello-world
+        run: echo "Hello World!"
